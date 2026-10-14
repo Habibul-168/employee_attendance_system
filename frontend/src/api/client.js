@@ -1,6 +1,6 @@
 // All API calls go through this file.
 // The base URL is read from the .env file so it's easy to change.
-const BASE = import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000';
+const BASE = (import.meta.env.VITE_API_BASE_URL || 'http://localhost:8000') + '/api';
 
 // Generic fetch wrapper — throws an Error with a readable message on failure
 async function request(path, options = {}) {

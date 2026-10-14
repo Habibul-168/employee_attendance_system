@@ -26,7 +26,7 @@ db = client[os.getenv("MONGO_DB", "attendance_db")]
 # IST timezone: UTC + 5:30
 IST = timezone(timedelta(hours=5, minutes=30))
 
-app = FastAPI(title="Employee Attendance & Analytics API", version="2.0.0")
+app = FastAPI(title="Employee Attendance & Analytics API", version="2.0.0", root_path="/api")
 
 app.add_middleware(
     CORSMiddleware,
