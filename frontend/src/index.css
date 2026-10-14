@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  font-size: 14px;
+  /* Rich layered background: diagonal gradient + subtle dot grid */
+  background-color: #0c1a3a;
+  background-image:
+    radial-gradient(ellipse 80% 60% at 20% 10%, rgba(56,189,248,0.22) 0%, transparent 60%),
+    radial-gradient(ellipse 60% 50% at 80% 80%, rgba(99,102,241,0.16) 0%, transparent 55%),
+    radial-gradient(ellipse 50% 40% at 60% 30%, rgba(14,165,233,0.12) 0%, transparent 50%),
+    linear-gradient(135deg, #0c1a3a 0%, #0f2a5e 50%, #0c1a3a 100%);
+  background-attachment: fixed;
+  color: #1e293b;
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+button { cursor: pointer; }
+input, select, textarea { font: inherit; }
+code {
+  font-family: 'Courier New', monospace;
+  font-size: 0.88em;
+  background: #f1f5f9;
+  padding: 1px 5px;
+  border-radius: 4px;
+  color: #7c3aed;
+}
